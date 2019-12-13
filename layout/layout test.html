@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>layout test</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        #wrap {width: 100%; font-size: 50px; text-align: center; color: white;}
+        #header {width: 100%;}
+        #header_top {height: 106px; line-height: 106px;background-color: #096f0e; }
+        #header_meun {height: 71px; line-height: 71px;background-color: #10df19;}
+        #banner {height: 450px; line-height: 450px; background-color: #c117b7;}
+        #contents {width: 100%;}
+        #contents1{height: 92px; line-height: 92px;background-color: #091d83;}
+        #contents2{height: 476px; line-height: 476px;background-color: #730983;}
+        #contents3{height: 389px; line-height: 389px;background-color: #835f09;}
+        #footer {width: 100%;}
+        #footer_menu {height: 61px; line-height: 61px;background-color: #834009;}
+        #footer_infor{height: 286px; line-height: 286px;background-color: #098312;}
+        
+        .container{width: 1040px; height: inherit; margin: 0 auto; background-color: rgba(0,0,0,0.5);}
+        
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+                           <div class="container"></div>
+            <div id="header_top">
+                <div class="container">header_top</div>
+            </div>
+                <div id="header_meun"> 
+                    <div class="container">header_meun</div>
+                </div>
+        </div>
+        
+        <div id="banner">                    
+            <div class="container">banner</div>
+        </div>
+        
+        <div id="contents">
+            <div id="contents1">
+                <div class="container">contents1</div>
+            </div>
+            
+            <div id="contents2">
+                <div class="container">contents2</div>
+            </div>
+            
+            <div id="contents3">
+                <div class="container">contents3</div>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <div id="footer_menu">
+                <div class="container">footer_menu</div>
+            </div>
+            
+            <div id="footer_infor">
+                <div class="container">footer_infor</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

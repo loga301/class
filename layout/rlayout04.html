@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Responsive Layout4</title>
+</head>
+<style>
+	*{margin: 0; padding: 0;}
+	#warp{width: 1200px; margin: 0 auto;}
+	header {width: 100%; height: 100px; background-color: #b3e5fc;}
+	aside {width: 40%; height: 900px; background-color: #4fc3f7;float: left}
+	article.article1 {width: 60%; height: 300px; background-color: #29b6f6; float: left;}
+	article.article2 {width: 60%; height: 300px; background-color: #03a9f4; float: left;}
+	article.article3 {width: 60%; height: 300px; background-color: #0288d1; float: left;}
+	footer {width: 100%; height: 100px; background-color: #00b0ff; clear: both;}
+
+	@media (max-width: 1220px){
+		#warp{width: 100%;}
+		article.article1 {height: 450px;}
+		article.article2 {height: 450px;}
+		article.article3 {width: 100%;}
+
+	}
+
+	@media (max-width: 768px){
+		#warp{width: 100%;}
+		aside {width: 100%; height: 300px;}
+		article.article1 {width: 50%;}
+		article.article2 {width: 50%;}
+
+	}
+
+	@media (max-width: 480px){
+		#warp{width: 100%;}
+		aside {width: 100%;}
+		article.article1 {width: 100%;}
+		article.article2 {width: 100%;}
+		article.article3 {width: 100%;}
+
+	}
+
+</style>
+<body>
+	<div id="warp">
+		<header></header>
+		<aside></aside>
+		<article class="article1"></article>
+		<article class="article2"></article>
+		<article class="article3"></article>
+		<footer></footer>
+	</div>
+</body>
+</html>

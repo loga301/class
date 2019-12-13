@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+	*{margin: 0; padding: 0;}
+	#warp{width: 1200px; margin: 0 auto;}
+	header {width: 100%; height: 100px; background-color: #b3e5fc;}
+	.container {width: 100%; height: 250px; background-color: #81d4fa;}
+	aside {width: 40%; height: 500px; background-color: #4fc3f7;float: left}
+	article.article1 {width: 60%; height: 250px; background-color: #29b6f6; float: left;}
+	article.article2 {width: 60%; height: 250px; background-color: #03a9f4; float: left;}
+	footer.footer1 {width: 33.333%; height: 300px; background-color: #00b0ff; float: left;}
+	footer.footer2 {width: 33.333%; height: 300px; background-color: #80d8ff; float: left;}
+	footer.footer3 {width: 33.333%; height: 300px; background-color: #29b6f6; float: left;}
+
+	section {width: 90%; background-color: #40c4ff; overflow: hidden; padding: 5%; }
+	section .article_01 {float: left; width: 23%; margin: 1%; height: 200px; background-color: #0091ea;}
+	section .article_02 {float: left; width: 23%; margin: 1%; height: 200px; background-color: #0091ea;}
+	section .article_03 {float: left; width: 23%; margin: 1%; height: 200px; background-color: #0091ea;}
+	section .article_04 {float: left; width: 23%; margin: 1%; height: 200px; background-color: #0091ea;}
+	.bottom {width: 100%; height: 100px; background-color: #0091ea; clear: both}
+
+	@media (max-width: 960px){
+		#warp{width: 100%;}
+		aside {height: 500px;}
+		article.article1 {height: 250px;}
+		article.article2 {height: 250px;}
+		footer.footer1 {width: 50%;}
+		footer.footer2 {width: 50%;}
+		footer.footer3{display: none;}
+		section .article_01{width: 31.333%;}
+		section .article_02{width: 31.333%;}
+		section .article_03{width: 31.333%;}
+		section .article_04{display: none;}
+	}
+
+	@media (max-width: 768px){
+		#warp{width: 100%;}
+		aside {height: 700px;}
+		article.article1 {height: 350px;}
+		article.article2 {height: 350px;}
+		footer.footer1 {width: 100%;}
+		footer.footer2 {width: 100%;}
+	
+
+	}
+
+	@media (max-width: 480px){
+		#warp{width: 100%;}
+		aside {width: 100%;}
+		article.article1 {width: 100%;}
+		article.article2 {width: 100%;}
+		section .article_01{width: 98%;}
+		section .article_02{width: 98%;}
+		section .article_03{width: 98%;}
+	}
+
+</style>
+<body>
+	<div id="warp">
+		<header></header>
+		<div class="container"></div>
+		<aside></aside>
+		<article class="article1"></article>
+		<article class="article2"></article>
+		<footer class="footer1"></footer>
+		<footer class="footer2"></footer>
+		<footer class="footer3"></footer>
+		<section>
+			<article class="article_01"></article>
+			<article class="article_02"></article>
+			<article class="article_03"></article>
+			<article class="article_04"></article>
+		</section>
+		<div class="bottom"></div>	
+	</div>
+</body>
+</html>
